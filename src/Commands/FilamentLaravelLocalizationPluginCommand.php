@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace CorneelD\FilamentLaravelLocalizationPlugin\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentLaravelLocalizationPluginCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-laravel-localization-plugin';
 
     public $description = 'My command';
 
