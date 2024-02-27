@@ -2,6 +2,8 @@
 
 namespace CorneelD\FilamentLaravelLocalizationPlugin;
 
+use CorneelD\FilamentLaravelLocalizationPlugin\Commands\FilamentLaravelLocalizationPluginCommand;
+use CorneelD\FilamentLaravelLocalizationPlugin\Testing\TestsFilamentLaravelLocalizationPlugin;
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
@@ -13,8 +15,6 @@ use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use CorneelD\FilamentLaravelLocalizationPlugin\Commands\FilamentLaravelLocalizationPluginCommand;
-use CorneelD\FilamentLaravelLocalizationPlugin\Testing\TestsFilamentLaravelLocalizationPlugin;
 
 class FilamentLaravelLocalizationPluginServiceProvider extends PackageServiceProvider
 {
