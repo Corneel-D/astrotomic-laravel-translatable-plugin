@@ -5,7 +5,7 @@ namespace CorneelD\FilamentLaravelLocalizationPlugin;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class FilamentLaravelLocalizationPluginPlugin implements Plugin
+class LaravelLocalizationPlugin implements Plugin
 {
     public function getId(): string
     {

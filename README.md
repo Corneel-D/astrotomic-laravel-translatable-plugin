@@ -46,8 +46,8 @@ return [
 ## Usage
 
 ```php
-$filamentLaravelLocalizationPlugin = new CorneelD\FilamentLaravelLocalizationPlugin();
-echo $filamentLaravelLocalizationPlugin->echoPhrase('Hello, CorneelD!');
+$laravelLocalizationPlugin = new CorneelD\LaravelLocalizationPlugin();
+echo $laravelLocalizationPlugin->echoPhrase('Hello, CorneelD!');
 ```
 
 ## Testing

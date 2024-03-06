@@ -4,7 +4,7 @@ namespace CorneelD\FilamentLaravelLocalizationPlugin\Commands;
 
 use Illuminate\Console\Command;
 
-class FilamentLaravelLocalizationPluginCommand extends Command
+class LaravelLocalizationPluginCommand extends Command
 {
     public $signature = 'filament-laravel-localization-plugin';
 

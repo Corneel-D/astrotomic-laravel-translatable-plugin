@@ -2,9 +2,8 @@
 
 namespace CorneelD\FilamentLaravelLocalizationPlugin;
 
-use CorneelD\FilamentLaravelLocalizationPlugin\Commands\FilamentLaravelLocalizationPluginCommand;
-use CorneelD\FilamentLaravelLocalizationPlugin\Testing\TestsFilamentLaravelLocalizationPlugin;
-use Filament\Support\Assets\AlpineComponent;
+use CorneelD\FilamentLaravelLocalizationPlugin\Commands\LaravelLocalizationPluginCommand;
+use CorneelD\FilamentLaravelLocalizationPlugin\Testing\TestsLaravelLocalizationPlugin;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
 use Filament\Support\Assets\Js;
@@ -16,7 +15,7 @@ use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class FilamentLaravelLocalizationPluginServiceProvider extends PackageServiceProvider
+class LaravelLocalizationPluginServiceProvider extends PackageServiceProvider
 {
     public static string $name = 'filament-laravel-localization-plugin';
 
@@ -88,7 +87,7 @@ class FilamentLaravelLocalizationPluginServiceProvider extends PackageServicePro
         }
 
         // Testing
-        Testable::mixin(new TestsFilamentLaravelLocalizationPlugin());
+        Testable::mixin(new TestsLaravelLocalizationPlugin());
     }
 
     protected function getAssetPackageName(): ?string
@@ -114,7 +113,7 @@ class FilamentLaravelLocalizationPluginServiceProvider extends PackageServicePro
     protected function getCommands(): array
     {
         return [
-            FilamentLaravelLocalizationPluginCommand::class,
+            LaravelLocalizationPluginCommand::class,
         ];
     }
 

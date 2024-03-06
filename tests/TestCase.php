@@ -4,7 +4,7 @@ namespace CorneelD\FilamentLaravelLocalizationPlugin\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
-use CorneelD\FilamentLaravelLocalizationPlugin\FilamentLaravelLocalizationPluginServiceProvider;
+use CorneelD\FilamentLaravelLocalizationPlugin\LaravelLocalizationPluginServiceProvider;
 use Filament\Actions\ActionsServiceProvider;
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
@@ -48,7 +48,7 @@ class TestCase extends Orchestra
             SupportServiceProvider::class,
             TablesServiceProvider::class,
             WidgetsServiceProvider::class,
-            FilamentLaravelLocalizationPluginServiceProvider::class,
+            LaravelLocalizationPluginServiceProvider::class,
         ];
     }
 
