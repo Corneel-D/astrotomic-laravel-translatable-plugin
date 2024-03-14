@@ -1,11 +1,9 @@
-# Localization plugin based on mcamara/laravel-localization
+# Localization plugin based on astrotomic/laravel-translatable
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/corneel-d/filament-laravel-localization-plugin.svg?style=flat-square)](https://packagist.org/packages/corneel-d/filament-laravel-localization-plugin)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/corneel-d/filament-laravel-localization-plugin/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/corneel-d/filament-laravel-localization-plugin/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/corneel-d/filament-laravel-localization-plugin/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/corneel-d/filament-laravel-localization-plugin/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/corneel-d/filament-laravel-localization-plugin.svg?style=flat-square)](https://packagist.org/packages/corneel-d/filament-laravel-localization-plugin)
-
-
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
@@ -70,8 +68,8 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Corneel D](https://github.com/Corneel-D)
-- [All Contributors](../../contributors)
+-   [Corneel D](https://github.com/Corneel-D)
+-   [All Contributors](../../contributors)
 
 ## License
 

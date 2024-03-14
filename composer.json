@@ -1,6 +1,6 @@
 {
     "name": "corneel-d/filament-laravel-localization-plugin",
-    "description": "Localization plugin based on mcamara/laravel-localization",
+    "description": "Localization plugin based on astrotomic/laravel-translatable",
     "keywords": [
         "Corneel-D",
         "laravel",
@@ -21,9 +21,9 @@
     ],
     "require": {
         "php": "^8.1",
+        "astrotomic/laravel-translatable": "^11.12",
         "filament/filament": "^3.0",
         "illuminate/contracts": "^10.0",
-        "mcamara/laravel-localization": "^1.8",
         "spatie/laravel-package-tools": "^1.15.0"
     },
     "require-dev": {
