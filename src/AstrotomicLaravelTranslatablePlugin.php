@@ -1,15 +1,15 @@
 <?php
 
-namespace CorneelD\FilamentLaravelLocalizationPlugin;
+namespace CorneelD\AstrotomicLaravelTranslatablePlugin;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class LaravelLocalizationPlugin implements Plugin
+class AstrotomicLaravelTranslatablePlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'filament-laravel-localization-plugin';
+        return 'astrotomic-laravel-translatable-plugin';
     }
 
     public function register(Panel $panel): void

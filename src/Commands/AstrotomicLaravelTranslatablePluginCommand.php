@@ -1,12 +1,12 @@
 <?php
 
-namespace CorneelD\FilamentLaravelLocalizationPlugin\Commands;
+namespace CorneelD\AstrotomicLaravelTranslatablePlugin\Commands;
 
 use Illuminate\Console\Command;
 
-class LaravelLocalizationPluginCommand extends Command
+class AstrotomicLaravelTranslatablePluginCommand extends Command
 {
-    public $signature = 'filament-laravel-localization-plugin';
+    public $signature = 'astrotomic-laravel-translatable-plugin';
 
     public $description = 'My command';
 

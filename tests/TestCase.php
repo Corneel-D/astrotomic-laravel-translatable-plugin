@@ -1,10 +1,10 @@
 <?php
 
-namespace CorneelD\FilamentLaravelLocalizationPlugin\Tests;
+namespace CorneelD\AstrotomicLaravelTranslatablePlugin\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
-use CorneelD\FilamentLaravelLocalizationPlugin\LaravelLocalizationPluginServiceProvider;
+use CorneelD\AstrotomicLaravelTranslatablePlugin\AstrotomicLaravelTranslatablePluginServiceProvider;
 use Filament\Actions\ActionsServiceProvider;
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
@@ -25,7 +25,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'CorneelD\\FilamentLaravelLocalizationPlugin\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'CorneelD\\AstrotomicLaravelTranslatablePlugin\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
@@ -44,7 +44,7 @@ class TestCase extends Orchestra
             SupportServiceProvider::class,
             TablesServiceProvider::class,
             WidgetsServiceProvider::class,
-            LaravelLocalizationPluginServiceProvider::class,
+            AstrotomicLaravelTranslatablePluginServiceProvider::class,
         ];
     }
 
@@ -53,7 +53,7 @@ class TestCase extends Orchestra
         config()->set('database.default', 'testing');
 
         /*
-        $migration = include __DIR__.'/../database/migrations/create_filament-laravel-localization-plugin_table.php.stub';
+        $migration = include __DIR__.'/../database/migrations/create_astrotomic-laravel-translatable-plugin_table.php.stub';
         $migration->up();
         */
     }

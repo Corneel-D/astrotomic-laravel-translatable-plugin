@@ -46,5 +46,5 @@ const defaultOptions = {
 compile({
     ...defaultOptions,
     entryPoints: ['./resources/js/index.js'],
-    outfile: './resources/dist/filament-laravel-localization-plugin.js',
+    outfile: './resources/dist/astrotomic-laravel-translatable-plugin.js',
 })

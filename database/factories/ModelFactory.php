@@ -1,6 +1,6 @@
 <?php
 
-namespace CorneelD\FilamentLaravelLocalizationPlugin\Database\Factories;
+namespace CorneelD\AstrotomicLaravelTranslatablePlugin\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

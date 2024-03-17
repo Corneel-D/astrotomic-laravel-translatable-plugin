@@ -1,9 +1,9 @@
 <?php
 
-namespace CorneelD\FilamentLaravelLocalizationPlugin;
+namespace CorneelD\AstrotomicLaravelTranslatablePlugin;
 
-use CorneelD\FilamentLaravelLocalizationPlugin\Commands\LaravelLocalizationPluginCommand;
-use CorneelD\FilamentLaravelLocalizationPlugin\Testing\TestsLaravelLocalizationPlugin;
+use CorneelD\AstrotomicLaravelTranslatablePlugin\Commands\AstrotomicLaravelTranslatablePluginCommand;
+use CorneelD\AstrotomicLaravelTranslatablePlugin\Testing\TestsAstrotomicLaravelTranslatablePlugin;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
 use Filament\Support\Assets\Js;
@@ -15,11 +15,11 @@ use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class LaravelLocalizationPluginServiceProvider extends PackageServiceProvider
+class AstrotomicLaravelTranslatablePluginServiceProvider extends PackageServiceProvider
 {
-    public static string $name = 'filament-laravel-localization-plugin';
+    public static string $name = 'astrotomic-laravel-translatable-plugin';
 
-    public static string $viewNamespace = 'filament-laravel-localization-plugin';
+    public static string $viewNamespace = 'astrotomic-laravel-translatable-plugin';
 
     public function configurePackage(Package $package): void
     {
@@ -35,7 +35,7 @@ class LaravelLocalizationPluginServiceProvider extends PackageServiceProvider
                     ->publishConfigFile()
                     ->publishMigrations()
                     ->askToRunMigrations()
-                    ->askToStarRepoOnGitHub('corneel-d/filament-laravel-localization-plugin');
+                    ->askToStarRepoOnGitHub('corneel-d/astrotomic-laravel-translatable-plugin');
             });
 
         $configFileName = $package->shortName();
@@ -81,18 +81,18 @@ class LaravelLocalizationPluginServiceProvider extends PackageServiceProvider
         if (app()->runningInConsole()) {
             foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
                 $this->publishes([
-                    $file->getRealPath() => base_path("stubs/filament-laravel-localization-plugin/{$file->getFilename()}"),
-                ], 'filament-laravel-localization-plugin-stubs');
+                    $file->getRealPath() => base_path("stubs/astrotomic-laravel-translatable-plugin/{$file->getFilename()}"),
+                ], 'astrotomic-laravel-translatable-plugin-stubs');
             }
         }
 
         // Testing
-        Testable::mixin(new TestsLaravelLocalizationPlugin());
+        Testable::mixin(new TestsAstrotomicLaravelTranslatablePlugin());
     }
 
     protected function getAssetPackageName(): ?string
     {
-        return 'corneel-d/filament-laravel-localization-plugin';
+        return 'corneel-d/astrotomic-laravel-translatable-plugin';
     }
 
     /**
@@ -101,9 +101,9 @@ class LaravelLocalizationPluginServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            // AlpineComponent::make('filament-laravel-localization-plugin', __DIR__ . '/../resources/dist/components/filament-laravel-localization-plugin.js'),
-            Css::make('filament-laravel-localization-plugin-styles', __DIR__ . '/../resources/dist/filament-laravel-localization-plugin.css'),
-            Js::make('filament-laravel-localization-plugin-scripts', __DIR__ . '/../resources/dist/filament-laravel-localization-plugin.js'),
+            // AlpineComponent::make('astrotomic-laravel-translatable-plugin', __DIR__ . '/../resources/dist/components/astrotomic-laravel-translatable-plugin.js'),
+            Css::make('astrotomic-laravel-translatable-plugin-styles', __DIR__ . '/../resources/dist/astrotomic-laravel-translatable-plugin.css'),
+            Js::make('astrotomic-laravel-translatable-plugin-scripts', __DIR__ . '/../resources/dist/astrotomic-laravel-translatable-plugin.js'),
         ];
     }
 
@@ -113,7 +113,7 @@ class LaravelLocalizationPluginServiceProvider extends PackageServiceProvider
     protected function getCommands(): array
     {
         return [
-            LaravelLocalizationPluginCommand::class,
+            AstrotomicLaravelTranslatablePluginCommand::class,
         ];
     }
 
@@ -147,7 +147,7 @@ class LaravelLocalizationPluginServiceProvider extends PackageServiceProvider
     protected function getMigrations(): array
     {
         return [
-            'create_filament-laravel-localization-plugin_table',
+            'create_astrotomic-laravel-translatable-plugin_table',
         ];
     }
 }

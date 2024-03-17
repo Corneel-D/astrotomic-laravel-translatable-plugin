@@ -1,15 +1,17 @@
 {
-    "name": "corneel-d/filament-laravel-localization-plugin",
+    "name": "corneel-d/filament-laravel-translatable-plugin",
     "description": "Localization plugin based on astrotomic/laravel-translatable",
     "keywords": [
         "Corneel-D",
         "laravel",
-        "filament-laravel-localization-plugin"
+        "filament",
+        "astrotomic",
+        "laravel-translatable"
     ],
-    "homepage": "https://github.com/corneel-d/filament-laravel-localization-plugin",
+    "homepage": "https://github.com/corneel-d/astrotomic-laravel-translatable-plugin",
     "support": {
-        "issues": "https://github.com/corneel-d/filament-laravel-localization-plugin/issues",
-        "source": "https://github.com/corneel-d/filament-laravel-localization-plugin"
+        "issues": "https://github.com/corneel-d/astrotomic-laravel-translatable-plugin/issues",
+        "source": "https://github.com/corneel-d/astrotomic-laravel-translatable-plugin"
     },
     "license": "MIT",
     "authors": [
@@ -40,13 +42,13 @@
     },
     "autoload": {
         "psr-4": {
-            "CorneelD\\FilamentLaravelLocalizationPlugin\\": "src/",
-            "CorneelD\\FilamentLaravelLocalizationPlugin\\Database\\Factories\\": "database/factories/"
+            "CorneelD\\AstrotomicLaravelTranslatablePlugin\\": "src/",
+            "CorneelD\\AstrotomicLaravelTranslatablePlugin\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CorneelD\\FilamentLaravelLocalizationPlugin\\Tests\\": "tests/"
+            "CorneelD\\AstrotomicLaravelTranslatablePlugin\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -66,10 +68,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "CorneelD\\FilamentLaravelLocalizationPlugin\\FilamentLaravelLocalizationPluginServiceProvider"
+                "CorneelD\\AstrotomicLaravelTranslatablePlugin\\AstrotomicLaravelTranslatablePluginServiceProvider"
             ],
             "aliases": {
-                "FilamentLaravelLocalizationPlugin": "CorneelD\\FilamentLaravelLocalizationPlugin\\Facades\\FilamentLaravelLocalizationPlugin"
+                "AstrotomicLaravelTranslatablePlugin": "CorneelD\\AstrotomicLaravelTranslatablePlugin\\Facades\\AstrotomicLaravelTranslatablePlugin"
             }
         }
     },

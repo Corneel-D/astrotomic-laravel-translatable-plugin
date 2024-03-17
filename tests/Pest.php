@@ -1,5 +1,5 @@
 <?php
 
-use CorneelD\FilamentLaravelLocalizationPlugin\Tests\TestCase;
+use CorneelD\AstrotomicLaravelTranslatablePlugin\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
